@@ -13,8 +13,18 @@ repositories {
 }
 
 dependencies {
+    // spring-boot-starter 의존성 추가
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // commons-lang3 의존성 추가
+    implementation 'org.apache.commons:commons-lang3:3.11'
+
+    // lombok 의존성 추가
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // spring-boot-starter-test 의존성 추가
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
